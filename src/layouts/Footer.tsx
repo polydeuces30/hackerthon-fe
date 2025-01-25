@@ -12,7 +12,7 @@ export default function Footer() {
               alt="floo"
               width={100}
               height={100}
-              className="w-2/3"
+              className="min-w-36 w-2/3"
             />
           </div>
           <div className="col-span-2 flex flex-col gap-5">
