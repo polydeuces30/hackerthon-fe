@@ -41,6 +41,9 @@ importers:
       react-icons:
         specifier: ^5.1.0
         version: 5.1.0(react@18.2.0)
+      swiper:
+        specifier: ^11.2.1
+        version: 11.2.1
       tailwind-merge:
         specifier: ^2.2.2
         version: 2.2.2
@@ -1728,6 +1731,10 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
+  swiper@11.2.1:
+    resolution: {integrity: sha512-62G69+iQRIfUqTmJkWpZDcX891Ra8O9050ckt1/JI2H+0483g+gq0m7gINecDqMtDh2zt5dK+uzBRxGhGOOvQA==}
+    engines: {node: '>= 4.7.0'}
+
   tailwind-merge@2.2.2:
     resolution: {integrity: sha512-tWANXsnmJzgw6mQ07nE3aCDkCK4QdT3ThPMCzawoYA2Pws7vSTCvz3Vrjg61jVUGfFZPJzxEP+NimbcW+EdaDw==}
 
@@ -3413,6 +3420,8 @@ snapshots:
       css-what: 6.1.0
       csso: 5.0.5
       picocolors: 1.0.0
+
+  swiper@11.2.1: {}
 
   tailwind-merge@2.2.2:
     dependencies:
