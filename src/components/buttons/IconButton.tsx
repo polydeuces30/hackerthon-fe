@@ -11,6 +11,7 @@ const IconButtonVariant = [
   "red",
   "outline",
   "ghost",
+  "black",
 ] as const;
 const IconButtonSize = ["xs", "sm", "base", "lg"] as const;
 
@@ -98,6 +99,13 @@ const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
               "active:bg-yellow-700",
               "disabled:bg-yellow-700",
               "focus-visible:ring-yellow-400",
+            ],
+            variant === "black" && [
+              "bg-[#0F0F0F] text-white",
+              "border border-[#0F0F0F]",
+              "hover:bg-[#141414] hover:text-white",
+              "active:bg-[#1F1F1F]",
+              "focus-visible:ring-[#1A1A1A]",
             ],
             variant === "outline" && [
               "text-black",
