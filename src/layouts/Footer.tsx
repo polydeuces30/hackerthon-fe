@@ -3,19 +3,19 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0F0F0F] text-[#999999] w-full px-16 py-8">
+    <footer className="bg-[#0F0F0F] text-[#999999] w-full px-8 py-8">
       <div className="flex flex-col gap-16">
-        <div className="grid grid-cols-11 pt-10">
-          <div className="col-span-3">
+        <div className="grid grid-cols-2 md:grid-cols-11 gap-y-5 md:gap-y-0 pt-10">
+          <div className="col-span-2 md:col-span-3">
             <Image
               src="/images/footer/logo.svg"
               alt="floo"
               width={100}
               height={100}
-              className="min-w-36 w-2/3"
+              className="min-w-36 w-1/3 md:w-2/3"
             />
           </div>
-          <div className="col-span-2 flex flex-col gap-5">
+          <div className="col-span-1 md:col-span-2 flex flex-col gap-5">
             <Link href="/" className="text-white">
               Home
             </Link>
@@ -26,7 +26,7 @@ export default function Footer() {
               <Link href="">FAQ</Link>
             </div>
           </div>
-          <div className="col-span-2 flex flex-col gap-5">
+          <div className="col-span-1 md:col-span-2 flex flex-col gap-5">
             <Link href="/directory" className="text-white">
               Live Channels
             </Link>
@@ -37,7 +37,7 @@ export default function Footer() {
               <Link href="">Popular</Link>
             </div>
           </div>
-          <div className="col-span-2 flex flex-col gap-5">
+          <div className="col-span-1 md:col-span-2 flex flex-col gap-5">
             <Link href="/support" className="text-white">
               Support
             </Link>
@@ -45,43 +45,43 @@ export default function Footer() {
               <Link href="">Contact Us</Link>
             </div>
           </div>
-          <div className="col-span-2 flex flex-col gap-5">
+          <div className="col-span-1 md:col-span-2 flex flex-col gap-5">
             <h3 className="text-white">Connect With Us</h3>
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
               <Link
                 href=""
-                className="flex items-center justify-center w-14 h-14 rounded-xl border border-[#262626] bg-[#1A1A1A]"
+                className="flex items-center justify-center rounded-xl border border-[#262626] bg-[#1A1A1A]"
               >
                 <Image
                   src="/images/footer/facebook.svg"
                   alt="facebook"
                   width={100}
                   height={100}
-                  className="w-7"
+                  className="w-10 p-2"
                 />
               </Link>
               <Link
                 href=""
-                className="flex items-center justify-center w-14 h-14 rounded-xl border border-[#262626] bg-[#1A1A1A]"
+                className="flex items-center justify-center rounded-xl border border-[#262626] bg-[#1A1A1A]"
               >
                 <Image
                   src="/images/footer/twitter.svg"
                   alt="twitter"
                   width={100}
                   height={100}
-                  className="w-7"
+                  className="w-10 p-2"
                 />
               </Link>
               <Link
                 href=""
-                className="flex items-center justify-center w-14 h-14 rounded-xl border border-[#262626] bg-[#1A1A1A]"
+                className="flex items-center justify-center rounded-xl border border-[#262626] bg-[#1A1A1A]"
               >
                 <Image
                   src="/images/footer/linkedin.svg"
                   alt="linkedin"
                   width={100}
                   height={100}
-                  className="w-7"
+                  className="w-10 p-2"
                 />
               </Link>
             </div>
