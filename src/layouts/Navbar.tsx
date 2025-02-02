@@ -17,12 +17,16 @@ export default function Navbar() {
   const isActive = (path: string) =>
     pathname === path ? "bg-[#1A1A1A]" : "text-[#BFBFBF]";
 
+  const isLanding = (path: string) => (pathname === path ? "absolute" : "");
+
   const toggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
   };
 
   return (
-    <nav className="flex justify-between items-center w-full h-24 py-2 px-8 md:text-sm lg:text-base lg:px-16 bg-transparent font-manrope">
+    <nav
+      className={`${isLanding("/")} flex justify-between items-center w-full h-24 py-2 px-8 md:text-sm lg:text-base lg:px-16 bg-transparent font-manrope`}
+    >
       <Image
         src="/images/footer/logo.svg"
         alt="Floo"
